@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/frame9/jekyll/theme/version"
+require_relative "lib/frame9-jekyll-theme/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "frame9-jekyll-theme"
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f| 
-    f.match(%r!^(package.json|assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i)
+    f.match(%r!^(package.json|assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml|404.html)!i)
   end
 
   # spec.bindir        = "exe"
