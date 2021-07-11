@@ -27,7 +27,8 @@
 
       {% if show_tab %}    
         <a
-          class="scribe-invert h2"
+          {% if page.url == tab.url %}active{% endif %}
+          class="h2 scribe-invert"
           href="{{ tab.url }}"
           >{{ tab.title }}
         </a>

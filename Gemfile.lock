@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    frame9-jekyll-theme (0.1.0)
+    frame9-jekyll-theme (0.1.3)
       jekyll (>= 4.1)
       jekyll-favicon (>= 0.2.9)
       jekyll-feed (>= 0.12)
