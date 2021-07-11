@@ -47,7 +47,7 @@ collections:
   tabs:
     sort_by: order
     output: true
-    permalink: /:title/
+    permalink: /:name/
 
 defaults:
   - scope:
