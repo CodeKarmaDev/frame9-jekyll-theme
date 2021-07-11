@@ -1,0 +1,27 @@
+a
+    color: var(--scribe-action)
+    display: inline-block
+    transform-origin: 50% 90%
+    transition: transform 10ms
+    @include media-query('md')
+        text-decoration: none
+
+a.action
+    text-decoration: none
+    text-align: center
+    font-family: 'Augusta', serif
+    font-size: get-size('700')
+    font-weight: bold
+    width: 100%
+    @include media-query('md')
+        font-size: get-size('900')
+
+
+a:not(.menu a):hover, a:not(.menu a):focus
+    text-decoration: underline
+    transform: scaleY(1.15)
+    color: var(--scribe-action-hover)
+
+a.logo, a.logo:hover, a.logo:focus
+    transform: none !important
+    

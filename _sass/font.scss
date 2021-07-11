@@ -1,0 +1,49 @@
+@include font-face((
+  'Augusta' : (
+    400 : 'Augusta'
+  ),
+  'Roboto' : (
+    400: (
+      normal : 'Roboto-Regular',
+      italic : 'Roboto-Italic'
+    ),
+    700: (
+      normal : 'Roboto-Bold',
+      italic : 'Roboto-BoldItalic'
+    )
+  )
+));
+
+
+body {
+    line-height: 1.8em;
+    font-family: 'Roboto', serif;
+    @include media-query('md') {
+        font-size: 1.2rem;
+    }
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+    padding: .2em 0;
+    font-family: 'Augusta', serif;
+    font-size: 1.8em;
+    line-height: 1em;
+}
+
+h1, .h1 {
+    font-size: get-size('900');
+    // padding-bottom: .2em;
+    // padding-top: .2em;
+    // padding-left: .2em;
+    @include media-query('md') {
+        font-size: 2*get-size('900')
+    }
+}
+
+.menu {
+  font-family: 'Augusta', serif;
+}
+
+// body {
+//     font: 1em 'Roboto', serif
+// }

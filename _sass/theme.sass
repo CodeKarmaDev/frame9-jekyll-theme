@@ -1,0 +1,8 @@
+\:root
+    @each $var, $color in $light-theme
+        --#{$var}: #{$color}
+
+@media (prefers-color-scheme: dark)
+    \:root
+        @each $var, $color in $dark-theme
+            --#{$var}: #{$color}

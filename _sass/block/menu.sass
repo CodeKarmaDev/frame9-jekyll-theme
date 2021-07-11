@@ -1,0 +1,22 @@
+.menu
+    position: relative
+    width: 100%
+    text-align: center
+    @include media-query('md')
+        position: absolute
+        width: auto
+        text-align: right
+        bottom: unset
+        top: var(--x)
+        right: calc( -0.5 * var(--x) )
+    a
+        display: block
+        text-decoration: none
+        font-weight: bold
+        transition: transform 50ms
+        transform-origin: 50% 80%
+
+    a:hover, a:focus
+        transform: scaleY(1.2)
+
+            

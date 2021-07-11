@@ -26,6 +26,18 @@ footer_links:
 
 frame9:
   show_current_tab: false
+  avatar: 'assets/img/avatar.png'
+  banner: 'assets/img/banner.png'
+  footer_links:
+    - title: Planet Minecraft
+      url: 'https://www.planetminecraft.com/texture-pack/framed-panes/'
+    - title: Github
+      url: 'https://github.com/opsaaaaa/FramedPanes'
+
+
+favicon:
+  source: favicon.svg
+  path: /assets/img/favicon/
 
 plugins:
   - jekyll-feed
@@ -43,11 +55,6 @@ sass:
 collections:
   sections:
     output: true
-  gallery:
-    output: false
-    sort_by: order
-  downloads:
-    output: false
   tabs:
     sort_by: order
     output: true
@@ -85,6 +92,3 @@ exclude:
   - package-lock.json
   - package.json
 
-favicon:
-  source: favicon.svg
-  path: /assets/img
