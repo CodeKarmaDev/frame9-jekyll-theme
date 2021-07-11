@@ -1,0 +1,41 @@
+
+<header class="l-header">
+  <div class='l-logo'>
+    <a
+      class="logo" 
+      href="/">
+      <img
+        class="drop-shadow z-900" 
+        src={{ "/assets/img/LogoIcon.png" | relarive_url }} 
+        alt="Framed Panes"
+        >
+    </a>
+  </div>
+    
+
+
+  <div class="menu text-shadow">
+    {% for tab in site.tabs %}
+      {% assign show_tab = site.frame9.show_current_tab %}
+      {% if show_tab == false %}
+        {% if page.url == tab.url %}
+          {% assign show_tab = false %}
+        {% else %}
+          {% assign show_tab = true %}
+        {% endif %}
+      {% endif %}
+
+      {% if show_tab %}    
+        <a
+          class="scribe-invert h2"
+          href="{{ tab.url }}"
+          >{{ tab.title }}
+        </a>
+      {%endif%}
+
+    {% endfor %}
+  </div>
+  
+  
+</header>
+

@@ -1,0 +1,45 @@
+
+
+{% assign limit = include.limit %}
+
+{% unless limit %}
+  {% assign limit = 9 %}
+{% endunless %}
+
+
+<div class="gallery bleed">
+
+  {% for _item in include.images limit: limit %}
+    
+    <div
+      {% if include.viewer %}viewer {% endif %}
+      class="g-img fill-gallery box-shadow-sm">
+      
+      <img
+        loading="lazy"
+        src="{{ _item.image | relative_url }}"
+        alt="{{ _item.alt }}"
+        >
+
+      {% if include.openable %}
+        <a
+          href="{{ _item.url | relative_url }}"
+          class="scribe-main"
+          >
+          <div>
+            {% if _item.summery %}
+              {{ _item.summery | markdownify }}
+            {% else %}
+              <h3>{{ _item.title }}</h3>
+              {{ _item.excerpt }}
+            {% endif %}
+          </div>
+        </a>
+      {% endif %}
+
+    </div>
+
+  {% endfor %}
+
+</div>
+

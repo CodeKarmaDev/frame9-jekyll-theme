@@ -1,0 +1,23 @@
+{
+  "name": "framedpaneswebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeKarmaDev/FramedPanesWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeKarmaDev/FramedPanesWebsite/issues"
+  },
+  "homepage": "https://github.com/CodeKarmaDev/FramedPanesWebsite#readme",
+  "dependencies": {
+    "font-face-generator": "^1.1.3",
+    "gorko": "^0.2.3"
+  }
+}

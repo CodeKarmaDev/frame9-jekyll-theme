@@ -1,0 +1,90 @@
+title: Framed Panes
+email: your-email@example.com
+description: >- 
+  A Minecraft resource pack / texture pack that adds unique and realistic 
+  window frames to each of Minecrafts colored stained glass panes. 
+  Use optifines connected texture for added awesomeness.
+tagline: >-
+  Unique connected window frames for Minecrafts glass panes
+baseurl: ""
+url: "framedpanes.tinkerswan.com"
+
+logo: /assets/img/LogoIcon.png
+
+twitter:
+  username: opsaaaaa
+  card: summary
+
+twitter_username: opsaaaaa
+github_username: opsaaaaa
+
+footer_links:
+  - title: Planet Minecraft
+    url: 'https://www.planetminecraft.com/texture-pack/framed-panes/'
+  - title: Github
+    url: 'https://github.com/opsaaaaa/FramedPanes'
+
+frame9:
+  show_current_tab: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-favicon
+
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+  # style: compressed
+
+
+collections:
+  sections:
+    output: true
+  gallery:
+    output: false
+    sort_by: order
+  downloads:
+    output: false
+  tabs:
+    sort_by: order
+    output: true
+    permalink: /:title/
+
+defaults:
+
+  - scope:
+      path: ''
+      type: section
+    values:
+      permalink: /section/:title/
+      layout: section
+
+  - scope:
+      path: ''
+      type: tabs
+    values:
+      layout: default
+
+
+exclude:
+  - graphics
+  - .gitignore
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package-lock.json
+  - package.json
+
+favicon:
+  source: favicon.svg
+  path: /assets/img

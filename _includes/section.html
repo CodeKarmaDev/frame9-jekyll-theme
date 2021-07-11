@@ -1,0 +1,6 @@
+
+{% assign section_page = site.sub_sections | find: 'title', include.title %}
+{{ section_page.output }}
+
+{% assign section_page = site.sub_sections | find: 'title', 'Installation' %}
+{{ section_page.output }}

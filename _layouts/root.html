@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    
+    <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1"
+        >
+
+    <meta 
+        http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8"
+        >
+
+    <link
+      rel="stylesheet"
+      href={{ "/assets/css/style.css" | relative_url }}
+      >
+
+    <script 
+      type="module"
+      src="{{ '/assets/js/main.js' | relative_url }}"
+      ></script>
+
+    {% seo %}
+
+    {% favicon %}
+  </head>
+
+  <body class='root-layout fill-main-b scribe-main'>
+
+    <div class="l-bannar fill-bannar">
+      <img
+        src={{ "/assets/img/banner.jpg" | relative_url }}
+        alt="Banner Window Frames"
+        loading="lazy"
+        >
+    </div>
+
+    {% include header.html %}
+
+
+    {{ content }}
+
+    {% include footer.html %}
+  </body>
+</html>

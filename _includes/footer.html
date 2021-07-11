@@ -1,0 +1,17 @@
+<footer class="l-footer footer">
+  <div class="columns">
+    <ul>
+    {% for link_ in site.footer_links %}
+      <li>
+        <a 
+          target="_blank"
+          href="{{ link_.url }}"
+          >{{ link_.title }}
+
+        </a>
+      </li>
+    {% endfor %}
+  </div>
+
+  </ul>
+</footer>
