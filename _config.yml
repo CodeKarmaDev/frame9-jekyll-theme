@@ -50,11 +50,19 @@ collections:
 
 defaults:
   - scope:
+      path: ''
       type: section
     values:
       layout: section
+  
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: default
 
   - scope:
+      path: ''
       type: tabs
     values:
       layout: default
