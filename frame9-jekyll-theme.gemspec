@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/frame9-jekyll-theme/version"
+require_relative "lib/frame9_jekyll_theme/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "frame9-jekyll-theme"
-  spec.version       = Frame9::Jekyll::Theme::VERSION
+  spec.version       = Frame9JekyllTheme::VERSION
   spec.authors       = ["opsaaaaa"]
   spec.email         = ["sean@codekarma.dev"]
 

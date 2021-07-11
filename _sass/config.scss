@@ -23,83 +23,6 @@ $gorko-size-scale: (
 );
 
 
-/// COLORS
-/// Colors are shared between backgrounds and text by default.
-/// You can also use them to power borders, fills or shadows, for example.
-///
-
-
-$colors: (
-  'white-a': #fff,
-  'white-b': rgb(218, 218, 218),
-  'white-c': #ddd,
-
-  'red-a': rgb(117, 45, 45),
-  'red-b': rgb(139, 49, 49),
-  'red-c': rgb(223, 79, 79),
-  'red-d': rgb(175, 63, 63),
-
-
-  'gray-a': #555,
-
-  'black-a': #000000,
-  'black-c': #151515,
-  'black-d': #2b2b2b,
-  'black-b': #555
-);
-
-
-
-$light-theme: (
-  'fill-main': map-get( $colors, 'white-a' ),
-  'fill-main-a': map-get( $colors, 'white-a' ),
-  'fill-main-b': map-get( $colors, 'white-b' ),
-  'fill-bannar': map-get( $colors, 'gray-a' ),
-  'fill-gallery': map-get( $colors, 'gray-a' ),
-
-  'scribe-action': map-get( $colors, 'red-a'),
-  'scribe-action-hover': map-get( $colors, 'red-b'),
-
-  'scribe-main': map-get( $colors, 'black-a'),
-  'scribe-main-a': map-get( $colors, 'black-a'),
-  'scribe-main-b': map-get( $colors, 'black-b'),
-  'scribe-mute': map-get( $colors, 'gray-a'),
-  'scribe-invert': map-get( $colors, 'white-a')
-);
-
-$dark-theme: (
-  'fill-main': map-get( $colors, 'black-d'),
-  'fill-main-a': map-get( $colors, 'black-d'),
-  'fill-main-b': map-get( $colors, 'black-c'),
-  'fill-bannar': map-get( $colors, 'black-c'),
-  'fill-gallery': map-get( $colors, 'black-d'),
-
-  'scribe-action': map-get( $colors, 'red-c'),
-  'scribe-action-hover': map-get( $colors, 'red-d'),
-
-  'scribe-main': map-get( $colors, 'white-a'),
-  'scribe-main-a': map-get( $colors, 'white-a'),
-  'scribe-main-b': map-get( $colors, 'white-b'),
-  'scribe-mute': map-get( $colors, 'gray-a'),
-  'scribe-invert': map-get( $colors, 'white-a')
-);
-
-$scribe-colors: (
-  'main': 'var(--scribe-main-a)',
-  'main-a': 'var(--scribe-main-a)',
-  'main-b': 'var(--scribe-main-b)',
-  'scribe-mute': 'var(--scribe-mute)',
-  'invert': 'var(--scribe-invert)'
-);
-
-$fill-colors: (
-  'bannar': 'var(--fill-bannar)',
-  'gallery': 'var(--fill-gallery)',
-  
-  'main': 'var(--fill-main-a)',
-  'main-a': 'var(--fill-main-a)',
-  'main-b': 'var(--fill-main-b)'
-);
 
 
 $gorko-colors: $colors;
@@ -119,11 +42,6 @@ $gorko-config: (
     'output': 'standard',
     'property': 'color'
   ),
-  'x': (
-    'items': $gorko-size-scale,
-    'output': 'standard',
-    'property': '--x'
-  ),
   'text-align': (
     'items': (
       'right': 'right',
@@ -133,53 +51,7 @@ $gorko-config: (
     'output': 'standard',
     'property': 'text-align'
   ),
-
-  'font': (
-    'items': (
-      'base': 'Helvetica, Arial, sans-serif'
-    ),
-    'output': 'standard',
-    'property': 'font-family'
-  ),
-  'z': (
-    'items': (
-      '300': 30,
-      '400': 1,
-      '500': 10,
-      '600': 20,
-      '700': 30,
-      '900': 50
-    ),
-    'output': 'standard',
-    'property': 'z-index'
-  ),
-  'text': (
-    'items': $gorko-size-scale,
-    'output': 'responsive',
-    'property': 'font-size'
-  ),
-  'weight': (
-    'items': (
-      'light': '300',
-      'regular': '400',
-      'bold': '700'
-    ),
-    'output': 'standard',
-    'property': 'font-weight'
-  ),
-  'width': (
-    'items': (
-      'full': '100%',
-      'half': percentage(1/2),
-      'quarter': percentage(1/4),
-      'third': percentage(1/3)
-    ),
-    'output': 'responsive',
-    'property': 'width'
-  ),
   'breakpoints': (
-    'sm': '(min-width: 36em)',
-    'md': '(min-width: 48em)',
-    'lg': '(min-width: 62em)'
+    'md': '(min-width: 48em)'
   )
 );

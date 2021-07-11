@@ -1,0 +1,92 @@
+
+// Site Color Config
+
+$colors: (
+  'white-a': #fff,
+  'white-b': rgb(218, 218, 218),
+  'white-c': #ddd,
+
+  'red-a': rgb(117, 45, 45),
+  'red-b': rgb(139, 49, 49),
+  'red-c': rgb(223, 79, 79),
+  'red-d': rgb(175, 63, 63),
+
+
+  'gray-a': #555,
+
+  'black-a': #000000,
+  'black-c': #151515,
+  'black-d': #2b2b2b,
+  'black-b': #555
+);
+
+// Light theme colors
+
+$light-theme: (
+  'fill-main': map-get( $colors, 'white-a' ),
+  'fill-main-a': map-get( $colors, 'white-a' ),
+  'fill-main-b': map-get( $colors, 'white-b' ),
+  'fill-banner': map-get( $colors, 'gray-a' ),
+  'fill-gallery': map-get( $colors, 'gray-a' ),
+
+  'scribe-action': map-get( $colors, 'red-a'),
+  'scribe-action-hover': map-get( $colors, 'red-b'),
+
+  'scribe-main': map-get( $colors, 'black-a'),
+  'scribe-main-a': map-get( $colors, 'black-a'),
+  'scribe-main-b': map-get( $colors, 'black-b'),
+  'scribe-mute': map-get( $colors, 'gray-a'),
+  'scribe-invert': map-get( $colors, 'white-a')
+);
+
+
+// Dark theme colors
+
+$dark-theme: (
+  'fill-main': map-get( $colors, 'black-d'),
+  'fill-main-a': map-get( $colors, 'black-d'),
+  'fill-main-b': map-get( $colors, 'black-c'),
+  'fill-banner': map-get( $colors, 'black-c'),
+  'fill-gallery': map-get( $colors, 'black-d'),
+
+  'scribe-action': map-get( $colors, 'red-c'),
+  'scribe-action-hover': map-get( $colors, 'red-d'),
+
+  'scribe-main': map-get( $colors, 'white-a'),
+  'scribe-main-a': map-get( $colors, 'white-a'),
+  'scribe-main-b': map-get( $colors, 'white-b'),
+  'scribe-mute': map-get( $colors, 'gray-a'),
+  'scribe-invert': map-get( $colors, 'white-a')
+);
+
+
+// Scribe colors are text color, 
+// or any color that takes up a small area of the page
+//
+// this generates css class tokens 
+// ie. `.scribe-main { color: var(--scribe-main-a); } `
+
+$scribe-colors: (
+  'main': 'var(--scribe-main-a)',
+  'main-a': 'var(--scribe-main-a)',
+  'main-b': 'var(--scribe-main-b)',
+  'scribe-mute': 'var(--scribe-mute)',
+  'invert': 'var(--scribe-invert)'
+);
+
+
+// Fill colors are background color, 
+// or any color that takes up a large area of the page
+//
+// this will generate css class tokens as well
+// ie. `.fill-banner { color: var(--fill-banner); } `
+
+$fill-colors: (
+  'banner': 'var(--fill-banner)',
+  'gallery': 'var(--fill-gallery)',
+  
+  'main': 'var(--fill-main-a)',
+  'main-a': 'var(--fill-main-a)',
+  'main-b': 'var(--fill-main-b)'
+);
+
