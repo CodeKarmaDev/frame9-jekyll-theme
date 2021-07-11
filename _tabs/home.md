@@ -11,8 +11,11 @@ description: A simple gallery focused jekyll theme.
 image: assets/img/SingleFramed.jpg
 ---
 
-# Frame 9
+# {{ site.title }}
 
-A simple gallery focused jekyll theme
+{{ page.description }}
+
+{% include gallery.html images=site.posts %}
+
 
 

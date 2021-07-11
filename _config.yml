@@ -1,39 +1,27 @@
-title: Framed Panes
+title: Frame 9
 email: your-email@example.com
 description: >- 
-  A Minecraft resource pack / texture pack that adds unique and realistic 
-  window frames to each of Minecrafts colored stained glass panes. 
-  Use optifines connected texture for added awesomeness.
+  A simple multipurpose 9 frame gallery theme for jekyll
 tagline: >-
-  Unique connected window frames for Minecrafts glass panes
+  The 9 frame gallery theme for jekyll
 baseurl: ""
-url: "framedpanes.tinkerswan.com"
-
-logo: /assets/img/LogoIcon.png
+url: "frame9.codekarma.com"
 
 twitter:
-  username: opsaaaaa
+  username: codekarmadev
   card: summary
 
-twitter_username: opsaaaaa
-github_username: opsaaaaa
+twitter_username: codekarmadev
+github_username: CodeKarmaDev
 
-footer_links:
-  - title: Planet Minecraft
-    url: 'https://www.planetminecraft.com/texture-pack/framed-panes/'
-  - title: Github
-    url: 'https://github.com/opsaaaaa/FramedPanes'
 
 frame9:
   show_current_tab: false
   avatar: 'assets/img/avatar.png'
   banner: 'assets/img/banner.png'
   footer_links:
-    - title: Planet Minecraft
-      url: 'https://www.planetminecraft.com/texture-pack/framed-panes/'
     - title: Github
-      url: 'https://github.com/opsaaaaa/FramedPanes'
-
+      url: 'https://github.com/CodeKarmaDev/frame9-jekyll-theme'
 
 favicon:
   source: favicon.svg
@@ -54,23 +42,19 @@ sass:
 
 collections:
   sections:
-    output: true
+    output: false
   tabs:
     sort_by: order
     output: true
     permalink: /:title/
 
 defaults:
-
   - scope:
-      path: ''
       type: section
     values:
-      permalink: /section/:title/
       layout: section
 
   - scope:
-      path: ''
       type: tabs
     values:
       layout: default
