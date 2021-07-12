@@ -14,12 +14,8 @@
     <div
       {% if include.viewer %}viewer {% endif %}
       class="g-img fill-gallery box-shadow-sm">
-      
-      <img
-        loading="lazy"
-        src="{{ _item.image | relative_url }}"
-        alt="{{ _item.alt }}"
-        >
+           
+      {% include image.html img=_item %}
 
       {% if include.openable %}
         <a
