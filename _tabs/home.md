@@ -15,7 +15,7 @@ image: assets/img/SingleFramed.jpg
 
 {{ page.description }}
 
-{% include gallery.html images=site.posts %}
+{% include gallery.html items=site.posts openable=true %}
 
 
 

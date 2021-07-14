@@ -1,4 +1,4 @@
-
+<p> Gallery</p>
 
 {% assign limit = include.limit %}
 
@@ -9,31 +9,9 @@
 
 <div class="gallery bleed">
 
-  {% for _item in include.images limit: limit %}
+  {% for _item in include.items limit: limit %}
     
-    <div
-      {% if include.viewer %}viewer {% endif %}
-      class="g-img fill-gallery box-shadow-sm">
-           
-      {% include image.html img=_item %}
-
-      {% if include.openable %}
-        <a
-          href="{{ _item.url | relative_url }}"
-          class="scribe-main"
-          >
-          <div>
-            {% if _item.summery %}
-              {{ _item.summery | markdownify }}
-            {% else %}
-              <h3>{{ _item.title }}</h3>
-              {{ _item.excerpt }}
-            {% endif %}
-          </div>
-        </a>
-      {% endif %}
-
-    </div>
+    {% include image.html item=_item openable=include.openable viewer=include.viewer class=include.class %}
 
   {% endfor %}
 

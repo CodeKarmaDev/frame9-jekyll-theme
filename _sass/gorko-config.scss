@@ -42,6 +42,11 @@ $gorko-config: (
     'output': 'standard',
     'property': 'color'
   ),
+  'x': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': '--x'
+  ),
   'text-align': (
     'items': (
       'right': 'right',
@@ -50,6 +55,14 @@ $gorko-config: (
     ),
     'output': 'standard',
     'property': 'text-align'
+  ),
+  'float': (
+    'items': (
+      'left': 'left',
+      'right': 'right'
+    ),
+    'output': 'responsive',
+    'property': 'float'
   ),
   'breakpoints': (
     'md': '(min-width: 48em)'
