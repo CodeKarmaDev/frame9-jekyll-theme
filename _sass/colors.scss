@@ -10,7 +10,7 @@ $colors: (
   'red-b': rgb(139, 49, 49),
   'red-c': rgb(223, 79, 79),
   'red-d': rgb(175, 63, 63),
-
+  'red-e': #ff7455,
 
   'gray-a': #555,
 
@@ -26,9 +26,9 @@ $light-theme: (
   'fill-main': map-get( $colors, 'white-a' ),
   'fill-main-a': map-get( $colors, 'white-a' ),
   'fill-main-b': map-get( $colors, 'white-b' ),
-  'fill-banner': map-get( $colors, 'gray-a' ),
   'fill-gallery': map-get( $colors, 'gray-a' ),
-
+  'fill-banner': map-get( $colors, 'red-e' ),
+  
   'scribe-action': map-get( $colors, 'red-a'),
   'scribe-action-hover': map-get( $colors, 'red-b'),
 
@@ -46,8 +46,8 @@ $dark-theme: (
   'fill-main': map-get( $colors, 'black-d'),
   'fill-main-a': map-get( $colors, 'black-d'),
   'fill-main-b': map-get( $colors, 'black-c'),
-  'fill-banner': map-get( $colors, 'black-c'),
   'fill-gallery': map-get( $colors, 'black-d'),
+  'fill-banner': map-get( $colors, 'red-e'),
 
   'scribe-action': map-get( $colors, 'red-c'),
   'scribe-action-hover': map-get( $colors, 'red-d'),
@@ -84,7 +84,6 @@ $scribe-colors: (
 $fill-colors: (
   'banner': 'var(--fill-banner)',
   'gallery': 'var(--fill-gallery)',
-  
   'main': 'var(--fill-main-a)',
   'main-a': 'var(--fill-main-a)',
   'main-b': 'var(--fill-main-b)'
