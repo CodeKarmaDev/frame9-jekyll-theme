@@ -23,13 +23,11 @@ Gem::Specification.new do |spec|
   # spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", ">= 2.1.4"
-  spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "webrick", ">= 1.6.1"
 
   # spec.add_runtime_dependency "jekyll-sitemap", ">= 1.4.0"
   spec.add_runtime_dependency "jekyll-seo-tag", ">= 2.7.0"
   spec.add_runtime_dependency "jekyll", ">= 4.1"  
-  spec.add_runtime_dependency "jekyll-redirect-from", ">= 0.16.0"
   spec.add_runtime_dependency 'jekyll-favicon', '>= 0.2.9' 
   spec.add_runtime_dependency "jekyll-feed", ">= 0.12"
 

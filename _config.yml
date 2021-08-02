@@ -84,6 +84,5 @@ exclude:
   - package-lock.json
   - package.json
   - frame9-jekyll-theme.gemspec
-  - spec
   - lib
 
