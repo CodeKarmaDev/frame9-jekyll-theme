@@ -30,12 +30,12 @@ h1, .h1 {
   font-family: 'Cinzel', serif;
 }
 
-.highlighter-rouge > * {
+.highlighter-rouge > *, figure.highlight {
   padding: .5em;
   border-radius: .5em;
 }
 
-.highlighter-rouge {
+.highlighter-rouge, figure.highlight {
   margin: 1em 0;
 }
 
