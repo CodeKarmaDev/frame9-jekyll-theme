@@ -3,14 +3,14 @@
 
 $colors: (
   'white-a': #fff,
-  'white-b': rgb(211, 211, 211),
+  'white-b': #dcdcdc,
   'white-c': #ddd,
 
   'red-a': rgb(117, 45, 45),
   'red-b': rgb(139, 49, 49),
   'red-c': rgb(223, 79, 79),
   'red-d': rgb(175, 63, 63),
-  'red-e': #ff7455,
+  'red-e': #b75251,
 
   'gray-a': #555,
 
@@ -32,6 +32,7 @@ $light-theme: (
   'scribe-action': map-get( $colors, 'red-a'),
   'scribe-action-hover': map-get( $colors, 'red-b'),
 
+  'scribe-white': map-get( $colors, 'white-a'),
   'scribe-main': map-get( $colors, 'black-a'),
   'scribe-main-a': map-get( $colors, 'black-a'),
   'scribe-main-b': map-get( $colors, 'black-b'),
@@ -52,6 +53,7 @@ $dark-theme: (
   'scribe-action': map-get( $colors, 'red-c'),
   'scribe-action-hover': map-get( $colors, 'red-d'),
 
+  'scribe-white': map-get( $colors, 'white-a'),
   'scribe-main': map-get( $colors, 'white-a'),
   'scribe-main-a': map-get( $colors, 'white-a'),
   'scribe-main-b': map-get( $colors, 'white-b'),
