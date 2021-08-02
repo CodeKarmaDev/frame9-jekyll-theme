@@ -4,9 +4,9 @@ order: 0
 
 permalink: /
 sub_sections:
-- Usage
+- Example Subsection
 
-description: A simple gallery focused jekyll theme.
+description: A flexible gallery jekyll theme.
 
 image: assets/img/SingleFramed.jpg
 ---
