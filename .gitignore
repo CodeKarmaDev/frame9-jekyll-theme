@@ -39,3 +39,6 @@ _graphics/src
 /pkg/
 /spec/reports/
 /tmp/
+
+# git
+.github

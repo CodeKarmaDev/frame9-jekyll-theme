@@ -19,7 +19,6 @@ theme: frame9-jekyll-theme
 frame9:
   show_current_tab: false
   avatar: 'assets/img/avatar.png'
-  banner: 'assets/img/banner-small.jpg'
   footer_links:
     - title: Github
       url: 'https://github.com/CodeKarmaDev/frame9-jekyll-theme'
@@ -84,4 +83,7 @@ exclude:
   - vendor/ruby/
   - package-lock.json
   - package.json
+  - frame9-jekyll-theme.gemspec
+  - spec
+  - lib
 

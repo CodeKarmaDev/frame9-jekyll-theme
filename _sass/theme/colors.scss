@@ -32,6 +32,9 @@ $light-theme: (
   'scribe-action': map-get( $colors, 'red-a'),
   'scribe-action-hover': map-get( $colors, 'red-b'),
 
+  'fill-code': map-get($colors, 'black-d'),
+  'scribe-code': map-get($colors, 'white-b'),
+
   'scribe-white': map-get( $colors, 'white-a'),
   'scribe-main': map-get( $colors, 'black-a'),
   'scribe-main-a': map-get( $colors, 'black-a'),
@@ -49,6 +52,9 @@ $dark-theme: (
   'fill-main-b': map-get( $colors, 'black-c'),
   'fill-gallery': map-get( $colors, 'black-d'),
   'fill-banner': map-get( $colors, 'red-e'),
+  
+  'fill-code': map-get($colors, 'black-c'),
+  'scribe-code': map-get($colors, 'white-b'),
 
   'scribe-action': map-get( $colors, 'red-c'),
   'scribe-action-hover': map-get( $colors, 'red-d'),

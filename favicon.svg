@@ -25,16 +25,11 @@
   </metadata>
   <g
      id="layer1">
-    <rect
-       style="font-variation-settings:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.564546;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000000"
+    <path
        id="rect133302"
-       width="58.619423"
-       height="58.047562"
-       x="10.340091"
-       y="-55.890038"
+       style="vector-effect:none;stroke-width:0.564546;paint-order:markers fill stroke;stop-color:#000000"
        transform="rotate(79.121129)"
-       rx="7.5189409"
-       ry="7.5189409" />
+       d="m 17.859032,-55.890038 h 43.581541 c 4.165493,0 7.518941,3.353448 7.518941,7.518941 v 43.0096802 c 0,4.1654933 -3.353448,7.5189409 -7.518941,7.5189409 H 17.859032 c -4.165494,0 -7.518941,-3.3534476 -7.518941,-7.5189409 V -48.371097 c 0,-4.165493 3.353447,-7.518941 7.518941,-7.518941 z" />
     <path
        id="path133304"
        style="font-variation-settings:normal;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.250709px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000000"

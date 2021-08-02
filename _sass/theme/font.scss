@@ -29,3 +29,20 @@ h1, .h1 {
 .menu {
   font-family: 'Cinzel', serif;
 }
+
+.highlighter-rouge > * {
+  padding: .5em;
+  border-radius: .5em;
+}
+
+.highlighter-rouge {
+  margin: 1em 0;
+}
+
+code {
+  background: var(--fill-code);
+  color: var(--scribe-code);
+  padding: 0 .2em;
+  border-radius: .3em;
+}
+
