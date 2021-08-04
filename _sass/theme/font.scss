@@ -30,19 +30,3 @@ h1, .h1 {
   font-family: 'Cinzel', serif;
 }
 
-.highlighter-rouge > *, figure.highlight {
-  padding: .5em;
-  border-radius: .5em;
-}
-
-.highlighter-rouge, figure.highlight {
-  margin: 1em 0;
-}
-
-code {
-  background: var(--fill-code);
-  color: var(--scribe-code);
-  padding: 0 .2em;
-  border-radius: .3em;
-}
-
