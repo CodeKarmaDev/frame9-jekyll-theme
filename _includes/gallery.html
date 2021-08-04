@@ -9,7 +9,7 @@
 
   {% for _item in include.items limit: limit %}
     
-    {% include image.html item=_item openable=include.openable viewer=include.viewer class=include.class %}
+    {% include gallery_item.html item=_item openable=include.openable viewer=include.viewer class=include.class %}
 
   {% endfor %}
 

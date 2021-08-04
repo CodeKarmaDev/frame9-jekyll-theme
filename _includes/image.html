@@ -1,31 +1,5 @@
-
-
-
-<div
-  {% if include.viewer %}viewer {% endif %}
-  {% if include.openable %}openable {% endif %}
-  class="img-wrap fill-gallery box-shadow-sm  {{ include.class }}">
-        
-  <img
-    loading="lazy"
-    src="{{ include.item.image | relative_url }}"
-    alt="{{ include.item.alt }}"
-    />
-
-  {% if include.openable %}
-    <a
-      href="{{ include.item.url | relative_url }}"
-      class="scribe-white"
-      >
-      <div>
-        {% if include.item.summery %}
-          {{ include.item.summery | markdownify }}
-        {% else %}
-          <h3>{{ include.item.title }}</h3>
-          {{ include.item.excerpt }}
-        {% endif %}
-      </div>
-    </a>
-  {% endif %}
-
-</div>
+<img
+  loading="lazy"
+  src="{{ include.src | relative_url }}"
+  alt="{{ include.alt }}"
+  />
