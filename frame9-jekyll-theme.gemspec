@@ -30,11 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll", ">= 4.1"  
   spec.add_runtime_dependency "jekyll-feed", ">= 0.12"
 
-  # spec.add_runtime_dependency "example-gem", "~> 1.0"
-
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
-
-  # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
 end
