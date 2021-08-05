@@ -5,6 +5,7 @@
 
 .highlighter-rouge, figure.highlight {
   margin: 1em 0;
+  overflow: auto;
 }
 
 code {
@@ -14,3 +15,6 @@ code {
   border-radius: .3em;
 }
 
+pre {
+  white-space: pre-wrap;
+}
