@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f| 
-    f.match(%r!^(package.json|assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml|404.html)!i)
+    f.match(%r!^(package.json|assets|_layouts|_includes|_sass|LICENSE|_config\.yml|README)!i)
   end
 
   # spec.bindir        = "exe"
@@ -28,7 +28,6 @@ Gem::Specification.new do |spec|
   # spec.add_runtime_dependency "jekyll-sitemap", ">= 1.4.0"
   spec.add_runtime_dependency "jekyll-seo-tag", ">= 2.7.0"
   spec.add_runtime_dependency "jekyll", ">= 4.1"  
-  spec.add_runtime_dependency 'jekyll-favicon', '>= 0.2.9' 
   spec.add_runtime_dependency "jekyll-feed", ">= 0.12"
 
   # spec.add_runtime_dependency "example-gem", "~> 1.0"

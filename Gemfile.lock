@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    frame9-jekyll-theme (0.2.1)
+    frame9-jekyll-theme (0.2.3)
       jekyll (>= 4.1)
-      jekyll-favicon (>= 0.2.9)
       jekyll-feed (>= 0.12)
       jekyll-seo-tag (>= 2.7.0)
 
@@ -38,9 +37,6 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-favicon (0.2.9)
-      jekyll (>= 3.0, < 5.0)
-      mini_magick (>= 4.9.4)
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (2.1.0)
@@ -58,7 +54,6 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_magick (4.11.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)

@@ -23,21 +23,17 @@ frame9:
     - title: Github
       url: 'https://github.com/CodeKarmaDev/frame9-jekyll-theme'
 
-favicon:
-  source: favicon.svg
-  path: /assets/img/favicon/
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-favicon
 
 
 sass:
   load_paths:
     - _sass
     - node_modules
-  # style: compressed
+  style: compressed
 
 
 collections:
@@ -59,7 +55,7 @@ defaults:
       path: ''
       type: posts
     values:
-      layout: default
+      layout: post
 
   - scope:
       path: ''
