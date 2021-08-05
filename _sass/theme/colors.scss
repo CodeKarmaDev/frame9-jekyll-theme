@@ -29,8 +29,11 @@ $light-theme: (
   'fill-gallery': map-get( $colors, 'gray-a' ),
   'fill-banner': map-get( $colors, 'red-e' ),
   
+  'fill-overlay': #0002,
+
   'scribe-action': map-get( $colors, 'red-a'),
   'scribe-action-hover': map-get( $colors, 'red-b'),
+
 
   'fill-code': map-get($colors, 'black-d'),
   'scribe-code': map-get($colors, 'white-b'),
@@ -52,7 +55,9 @@ $dark-theme: (
   'fill-main-b': map-get( $colors, 'black-c'),
   'fill-gallery': map-get( $colors, 'black-d'),
   'fill-banner': map-get( $colors, 'red-e'),
-  
+
+  'fill-overlay': #0002,
+
   'fill-code': map-get($colors, 'black-c'),
   'scribe-code': map-get($colors, 'white-b'),
 
@@ -91,6 +96,7 @@ $scribe-colors: (
 
 $fill-colors: (
   'banner': 'var(--fill-banner)',
+  'overlay': 'var(--fill-overlay)',
   'gallery': 'var(--fill-gallery)',
   'main': 'var(--fill-main-a)',
   'main-a': 'var(--fill-main-a)',
