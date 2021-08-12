@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    frame9-jekyll-theme (0.2.8)
+    frame9-jekyll-theme (0.2.9)
       jekyll (>= 4.1)
       jekyll-feed (>= 0.12)
       jekyll-seo-tag (>= 2.7.0)
