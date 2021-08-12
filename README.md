@@ -97,7 +97,7 @@ order: 0
 
 In a page header you can define a `sub_sections` list.
 ```yml
-sub_sections/toc.md
+_sections/toc.md
 ---
 title: TOC
 ---
