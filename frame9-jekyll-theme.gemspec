@@ -22,13 +22,13 @@ Gem::Specification.new do |spec|
   # spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   # spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", ">= 2.1.4"
-  spec.add_development_dependency "webrick", ">= 1.6.1"
+  spec.add_development_dependency "bundler", "~> 2.1", '>= 2.1.4'
+  spec.add_development_dependency "webrick", "~> 1.6", '>= 1.6.1'
 
   # spec.add_runtime_dependency "jekyll-sitemap", ">= 1.4.0"
-  spec.add_runtime_dependency "jekyll-seo-tag", ">= 2.7.0"
-  spec.add_runtime_dependency "jekyll", ">= 4.1"  
-  spec.add_runtime_dependency "jekyll-feed", ">= 0.12"
+  spec.add_runtime_dependency "jekyll-seo-tag", '~> 2.7', '>= 2.7.0'
+  spec.add_runtime_dependency "jekyll", "~> 4.1"  
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.12"
 
   # guide at: https://bundler.io/guides/creating_gem.html
 end
