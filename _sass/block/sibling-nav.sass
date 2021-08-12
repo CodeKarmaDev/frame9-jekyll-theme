@@ -1,0 +1,30 @@
+
+.sibling-nav
+    display: grid
+    grid-auto-columns: 1fr
+    gap: 0
+
+    margin-bottom: calc( var(--x) * -1 )
+    padding-top: var(--x)
+
+.sibling-btn
+    border-top: solid 1px var(--scribe-mute)
+    display: block
+    width: 100%
+    background-color: var(--fill-main-a)
+    padding: 1em
+
+.sibling-nav > div + div .sibling-btn
+    border-left: solid 1px var(--scribe-mute)
+
+.sibling-btn:hover
+    background-color: var(--fill-mute)
+    text-decoration: none !important
+
+.sibling-btn:hover > *:not(label)
+    text-decoration: underline
+
+.sibling-btn label
+    display: block
+    line-height: 1em
+    color: var(--scribe-mute)

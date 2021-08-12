@@ -22,7 +22,16 @@ $gorko-size-scale: (
   '900': $gorko-base-size * 3
 );
 
-
+$justify-align-content: (
+    'start': 'start',
+    'end': 'end',
+    'center': 'center',
+    'normal': 'normal',
+    'between': 'space-between',
+    'around': 'space-around',
+    'evenly': 'space-evenly',
+    'stretch': 'stretch'
+);
 
 
 $gorko-colors: $colors;

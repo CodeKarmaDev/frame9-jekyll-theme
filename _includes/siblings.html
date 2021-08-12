@@ -1,0 +1,41 @@
+
+{% if page.show_sibling_nav %}
+  <nav class="sibling-nav hbox ">
+
+
+    {% if page.previous %}
+      <div class="previous">
+        <a 
+          class="sibling-btn"
+          href="{{ page.previous.url }}"
+          >
+          <label>
+            Previous:
+          </label> 
+          <strong>
+            {{ page.previous.title }}
+          </strong>
+        </a>
+      </div>
+    {% endif %}
+
+    {% if page.next %}
+      <div class="next">
+
+        <a 
+          class="sibling-btn"
+          href="{{ page.next.url }}"
+          >
+          <label>
+            Next: 
+          </label>
+          <strong>
+            {{ page.next.title }}
+          </strong>
+        </a>    
+      </div>
+
+    {% endif %}
+
+    </nav>
+{% endif %}
