@@ -90,9 +90,7 @@ order: 0
 ---
 
 # Your Heading
-{% raw %}
 {% include gallery.html items=site.posts openable=true limit=9 %}
-{% endraw %}
 ```
 
 ### Sub Sections
@@ -106,14 +104,12 @@ title: TOC
 
 ## Table Of Contents
 
-{% raw %}
 {% for post in site.posts %}
 [{{ post.title }}]({{ doc.url }})
 {% endfor %}
-{% endraw %}
 ```
 ```yml
-posts.md
+_tabs/posts.md
 ---
 sub_sections:
 - TOC
@@ -124,17 +120,18 @@ sub_sections:
 
 The `gallery.html` include displays a panel of images.
 It takes five passable parameters `items`, `openable`, `viewer`, `limit`, and `class` 
-{% highlight liquid %}{% raw %}
+```jekyll
 {% include gallery.html items=site.posts openable=true limit=12 %}
-{% endraw %}{% endhighlight %}
+```
 
 
-Tag | Description | Default 
-`items` | Accept a collection or a list of gallery items | `required`
-`openable` | will make each images a hyperlink to its own page. | `false`
-`viewer` | Each image will enlarge when clicked | `false`
-`limit` | can set the max amount of images to display in the panel | `9`.
-`class` | adds custom classes to the `img-wrapper` element. | `""`
+| Tag | Description | Default |
+| :-- | :-- | --: |
+| `items` | Accept a collection or a list of gallery items | `required` |
+| `openable` | will make each images a hyperlink to its own page. | `false` |
+| `viewer` | Each image will enlarge when clicked | `false` |
+| `limit` | can set the max amount of images to display in the panel | `9`. |
+| `class` | adds custom classes to the `img-wrapper` element. | `""` |
 {:.mb-x}
 
 
@@ -163,10 +160,9 @@ You might want to display the image on its own page for example.
 It accepts `item`, `viewer`, `openable`, and `class`.
 the `item` being a single Gallery Item Object.
 
-{% highlight liquid %}{% raw %}
+```liquid
 {% include gallery_item.html item=page viewer=true class="float-left mb-x" %}
-{% endraw %}{% endhighlight %}
-
+```
 
 
 ## Usage
