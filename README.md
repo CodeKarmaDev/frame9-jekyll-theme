@@ -120,9 +120,11 @@ sub_sections:
 
 The `gallery.html` include displays a panel of images.
 It takes five passable parameters `items`, `openable`, `viewer`, `limit`, and `class` 
-```jekyll
+```liquid
 {% include gallery.html items=site.posts openable=true limit=12 %}
 ```
+
+You can pass the gallery include tag a collection or a list of "Gallery Item Objects"
 
 
 | Tag | Description | Default |
@@ -132,24 +134,29 @@ It takes five passable parameters `items`, `openable`, `viewer`, `limit`, and `c
 | `viewer` | Each image will enlarge when clicked | `false` |
 | `limit` | can set the max amount of images to display in the panel | `9`. |
 | `class` | adds custom classes to the `img-wrapper` element. | `""` |
-{:.mb-x}
 
 
 #### Gallery Item Object
 
-The gallery item object expects to have `image`, `alt` properties.
-with the `summery` and `url` are optional.
-when using a collection you can place these options in the markdown header. 
+A gallery item object should to have `image` and `alt` properties.
+with optional `summery` and `url` properties.
+When using a collection you can define these in the markdown header. 
+
+| Tag | Description | Default |
+| :-- | :-- | --: |
+| `image` | the path to a image file | `Required` |
+| `alt` | the alt for the image | `Recommended` |
+| `summery` | some markdown that displays a preview in the gallery. | it defaults to [jekyll's excerpt property](https://jekyllrb.com/docs/posts/#post-excerpts) |
+| `url` | the url to open when openable is enabled | With a collection Jekyll handles it for you |
+
 ```yaml
-image: assets/img/post1.jpg         # the path to the image file
-alt: A cool picture of something    # the alt for your image
-# a bit of markdown that displays on hover as a preview in the gallery.
-# If it defaults to jekylls collection excerpt property
+_posts/yyyy-mm-dd-example.md
+---
+image: assets/img/post1.jpg 
+alt: A cool picture of something 
 summery: >-                     
     ### Title
     Sub Title
-# the url to open when openable is enabled, 
-# if you are passing a collection then jekyll handles it for you. 
 url: /my/post/                      
 ```
 
@@ -164,16 +171,6 @@ the `item` being a single Gallery Item Object.
 {% include gallery_item.html item=page viewer=true class="float-left mb-x" %}
 ```
 
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
