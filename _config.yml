@@ -37,33 +37,31 @@ sass:
 
 
 collections:
-  sections:
-    output: false
   tabs:
     sort_by: order
     output: true
     permalink: /:name/
+  sections:
+    output: false
 
-defaults:
-  - scope:
-      path: ''
-      type: section
-    values:
-      layout: section
-  
+defaults:  
   - scope:
       path: ''
       type: posts
     values:
       layout: post
       show_sibling_nav: true
-
   - scope:
       path: ''
       type: tabs
     values:
       layout: default
 
+  - scope:
+      path: ''
+      type: section
+    values:
+      layout: section
 
 exclude:
   - graphics

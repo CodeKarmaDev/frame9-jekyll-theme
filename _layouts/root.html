@@ -13,18 +13,20 @@
 
     {% include header.html %}
 
-    <main class="l-content l-main fill-main box-shadow">
-      {{ content }}
-    </main>
+    <div class="l-main">
+      <main class="l-content fill-main box-shadow">
+        {{ content }}
+      </main>
 
-    {% for section_title in page.sub_sections %}
-      <div class="l-content fill-main box-shadow">
-        <div class="box">
-          {% assign section_page = site.sections | find: 'title', section_title %}
-          {{ section_page.output }}
+      {% for section_title in page.sub_sections %}
+        <div class="l-content fill-main box-shadow">
+          <div class="box">
+            {% assign section_page = site.sections | find: 'title', section_title %}
+            {{ section_page.output }}
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
 
     {% include footer.html %}
   </body>

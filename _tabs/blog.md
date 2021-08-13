@@ -1,6 +1,8 @@
 ---
 title: Blog
 order: 6
+sub_sections:
+- Example Subsection
 ---
 
 # All Posts

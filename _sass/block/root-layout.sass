@@ -8,36 +8,40 @@
     
     grid-template-columns: 1fr minmax( 10em, 60em) 1fr
     
-    grid-template-rows: minmax( 5vh, auto) minmax(10vh, auto)
-    grid-auto-rows: minmax( 1em, auto ) 
+    grid-template-rows: minmax( 5vh, auto) minmax(10vh, auto) auto
+
+    & > *:last-child
+        padding-bottom: var(--x)
+        // margin-top: var(--x)
+    // grid-auto-rows: minmax( 1em, auto ) 
 
     grid-gap: var(--x)
 
     & > *
         grid-column: 2 / 3
 
-    .l-banner
+.l-banner
+    grid-column: 1 / 4
+    grid-row: 1 / 3
+            
 
-        grid-column: 1 / 4
-        grid-row: 1 / 3
-                
+.l-header
+    grid-row: 1 / 2
+    position: relative
 
-    .l-header
-        grid-row: 1 / 2
-        position: relative
-
-    .l-main
-        grid-row: 2 / 4
-
-    .l-menu
-        grid-row: 1 / 2
-        position: relative
+.l-main
+    grid-row: 2 / 3
+.l-main > * + *
+    margin-top: var(--x)
 
 
-    .l-content
-        padding-bottom: get-size('900')
 
-    .l-logo
-        margin-left: calc( -1 * var(--x) )
+.l-menu
+    grid-row: 1 / 2
+    position: relative
+
+
+.l-logo
+    margin-left: calc( -1 * var(--x) )
 
     

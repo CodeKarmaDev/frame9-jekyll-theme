@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    frame9-jekyll-theme (0.2.9)
-      jekyll (>= 4.1)
-      jekyll-feed (>= 0.12)
-      jekyll-seo-tag (>= 2.7.0)
+    frame9-jekyll-theme (1.0.0)
+      jekyll (~> 4.1)
+      jekyll-feed (~> 0.12)
+      jekyll-seo-tag (~> 2.7, >= 2.7.0)
 
 GEM
   remote: https://rubygems.org/
@@ -74,9 +74,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bundler (>= 2.1.4)
+  bundler (~> 2.1, >= 2.1.4)
   frame9-jekyll-theme!
-  webrick (>= 1.6.1)
+  webrick (~> 1.6, >= 1.6.1)
 
 BUNDLED WITH
    2.2.14
