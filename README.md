@@ -34,21 +34,13 @@ theme: frame9-jekyll-theme
 You will want to configure the `collections` and `defaults`.
 
 ```yml
-collections:
-  sections:     # Used for adding sub_sections to pages
-    output: false       
+collections:   
   tabs:         # Each tab shows up as a page in your sites nav
     sort_by: order
     output: true
     permalink: /:name/
 
 defaults:
-  - scope:      # Use the section layout for sub_sections
-      path: ''
-      type: section
-    values:
-      layout: section
-
   - scope:      # use the default layout for tabs
       path: ''
       type: tabs
@@ -96,27 +88,6 @@ order: 0
 {% include gallery.html items=site.posts openable=true limit=9 %}
 ```
 
-### Sub Sections
-
-In a page header you can define a `sub_sections` list.
-```yml
-_sections/toc.md
----
-title: TOC
----
-
-## Table Of Contents
-
-{% for post in site.posts %}
-[{{ post.title }}]({{ doc.url }})
-{% endfor %}
-```
-```yml
-_tabs/posts.md
----
-sub_sections:
-- TOC
-```
 
 ### Gallery Include Tag
 

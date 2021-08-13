@@ -3,8 +3,6 @@ title: Home
 order: 0
 
 permalink: /
-sub_sections:
-- Example Subsection
 
 description: A flexible gallery jekyll theme.
 

@@ -41,8 +41,6 @@ collections:
     sort_by: order
     output: true
     permalink: /:name/
-  sections:
-    output: false
 
 defaults:  
   - scope:
@@ -55,13 +53,8 @@ defaults:
       path: ''
       type: tabs
     values:
-      layout: default
+      layout: tab
 
-  - scope:
-      path: ''
-      type: section
-    values:
-      layout: section
 
 exclude:
   - graphics
