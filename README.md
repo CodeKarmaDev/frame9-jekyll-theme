@@ -4,7 +4,7 @@
 A small flexible gallery theme for [jekyll](https://jekyllrb.com/).
 The main feature is the 9 pane gallery element.
 
-[Live Demo](frame9demo.codekarma.dev)
+[Live Demo](https://frame9demo.codekarma.dev){:target="_blank"}
 
 ![Frame9ThumbNail](https://user-images.githubusercontent.com/5777735/129265363-45758a22-504a-4823-8f21-618923e756a7.png)
 
